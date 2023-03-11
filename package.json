@@ -1,0 +1,19 @@
+{
+  "name": "coderhub",
+  "version": "1.0.0",
+  "description": "coderwhy老师的node课程项目，wx：coderwhy003，一个旨在分享程序员生活的平台",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/caizhiqiang999/coderhub.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/caizhiqiang999/coderhub/issues"
+  },
+  "homepage": "https://github.com/caizhiqiang999/coderhub#readme"
+}
