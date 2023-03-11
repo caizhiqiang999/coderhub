@@ -4,7 +4,8 @@
   "description": "coderwhy老师的node课程项目，wx：coderwhy003，一个旨在分享程序员生活的平台",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon ./src/index.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,12 @@
   "bugs": {
     "url": "https://github.com/caizhiqiang999/coderhub/issues"
   },
-  "homepage": "https://github.com/caizhiqiang999/coderhub#readme"
+  "homepage": "https://github.com/caizhiqiang999/coderhub#readme",
+  "dependencies": {
+    "@koa/router": "^12.0.0",
+    "dotenv": "^16.0.3",
+    "koa": "^2.14.1",
+    "koa-bodyparser": "^4.3.0",
+    "mysql2": "^3.2.0"
+  }
 }
