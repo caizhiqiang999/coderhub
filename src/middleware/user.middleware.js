@@ -1,5 +1,6 @@
 const { NAME_OR_PASSWORD_IS_REQUIRED, NAME_IS_ALREADY_EXISTS } = require('../config/error')
 const userService = require('../service/user.service')
+const md5password = require('../utils/md5-password')
 
 const verifyUser = async (ctx, next) => {
   const { name, password } = ctx.request.body
@@ -18,6 +19,13 @@ const verifyUser = async (ctx, next) => {
   await next()
 }
 
+const handlePassword = async (ctx, next) => {
+  const { password } = ctx.request.body
+  ctx.request.body.password = md5password(password)
+  await next()
+}
+
 module.exports = {
-  verifyUser
+  verifyUser,
+  handlePassword
 }
