@@ -4,6 +4,8 @@ const NAME_IS_NOT_EXISTS = 'name_is_not_exists'
 const PASSWORD_IS_INCORRENT = 'password_is_incorrent'
 const UNAUTHORIZATION = 'unauthorization'
 const OPERATION_IS_NOT_ALLOWED = 'operation_is_not_allowed'
+const AUTHENTICATION_FAILED = 'authentication_failed'
+const CONTENT_CANNOT_BE_EMPTY = 'content_cannot_be_empty'
 
 module.exports = {
   NAME_OR_PASSWORD_IS_REQUIRED,
@@ -11,5 +13,7 @@ module.exports = {
   NAME_IS_NOT_EXISTS,
   PASSWORD_IS_INCORRENT,
   UNAUTHORIZATION,
-  OPERATION_IS_NOT_ALLOWED
+  OPERATION_IS_NOT_ALLOWED,
+  AUTHENTICATION_FAILED,
+  CONTENT_CANNOT_BE_EMPTY
 }
